@@ -26,6 +26,7 @@ return array(
     'App\\Models\\Permission' => $baseDir . '/app/Models/Permission.php',
     'App\\Models\\Prize' => $baseDir . '/app/Models/Prize.php',
     'App\\Models\\Question' => $baseDir . '/app/Models/Question.php',
+    'App\\Models\\Refund' => $baseDir . '/app/Models/Refund.php',
     'App\\Models\\Role' => $baseDir . '/app/Models/Role.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\Winner' => $baseDir . '/app/Models/Winner.php',

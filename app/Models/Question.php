@@ -13,4 +13,14 @@ class Question extends Model
         'title',
         'difficulty',
     ];
+
+    public function competition()
+    {
+        return $this->hasOne('App\Models\Competition');
+    }
+
+    public function refund()
+    {
+        return $this->hasOne('App\Models\Refund');
+    }
 }

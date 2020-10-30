@@ -26,4 +26,24 @@ class Competition extends Model
         'start_date' => 'datetime',
         'end_date' => 'datetime',
     ];
+
+    public function question()
+    {
+        return $this->hasOne('App\Models\Question', '_fk_question');
+    }
+
+    public function prize()
+    {
+        return $this->hasOne('App\Models\Prize', '_fk_prize');
+    }
+
+    public function winner()
+    {
+        return $this->hasOne('App\Models\Winner', '_fk_winner');
+    }
+
+    public function draw()
+    {
+        return $this->hasOne('App\Models\Draw', '_fk_draw');
+    }
 }

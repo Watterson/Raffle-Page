@@ -18,4 +18,9 @@ class Draw extends Model
     protected $casts = [
         'start_time' => 'datetime',
     ];
+
+    public function competition()
+    {
+        return $this->hasOne('App\Models\Competition');
+    }
 }

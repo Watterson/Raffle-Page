@@ -550,6 +550,7 @@ class ComposerStaticInitbed6326b2b6acdc1d8008b51147311b4
         'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
         'App\\Models\\Prize' => __DIR__ . '/../..' . '/app/Models/Prize.php',
         'App\\Models\\Question' => __DIR__ . '/../..' . '/app/Models/Question.php',
+        'App\\Models\\Refund' => __DIR__ . '/../..' . '/app/Models/Refund.php',
         'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\Winner' => __DIR__ . '/../..' . '/app/Models/Winner.php',

@@ -10,8 +10,12 @@ class Winner extends Model
     use HasFactory;
 
     protected $fillable = [
-        '_fk_user',
-        '_fk_competition',
+        '_fk_entry',
         'redeemed',
     ];
+
+    public function entry()
+    {
+        return $this->belongsTo('App\Models\Entry', '_fk_entry');
+    }
 }

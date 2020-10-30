@@ -14,4 +14,9 @@ class Answer extends Model
         'title',
         'correct'
     ];
+
+    public function question()
+    {
+        return $this->belongsTo('App\Models\Question', '_fk_question');
+    }
 }

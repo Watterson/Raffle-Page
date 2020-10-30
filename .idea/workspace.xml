@@ -7,27 +7,20 @@
   <component name="ChangeListManager">
     <list default="true" id="49200e9e-b29d-4c57-a35c-b2ea850e4098" name="Default Changelist" comment="Fresh Laravel installation">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Competition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Draw.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Entry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Prize.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Winner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162524_create_competitions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162605_create_prizes_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162638_create_winners_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162708_create_questions_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162740_create_answers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162802_create_payments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_170547_create_entries_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Refund.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_184216_create_refunds_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_184729_add_table_relationships.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Competition.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Competition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Draw.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Draw.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Entry.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Entry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Prize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Winner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Winner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -43,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="Authentication" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -200,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603466815463</updated>
       <workItem from="1603466816718" duration="4808000" />
-      <workItem from="1603846660917" duration="16598000" />
+      <workItem from="1603846660917" duration="19614000" />
     </task>
     <task id="LOCAL-00001" summary="Fresh Laravel installation">
       <created>1603470733660</created>
@@ -216,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603855044995</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Db-1 Added models &amp; migrations">
+      <created>1604081693638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604081693638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +244,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fresh Laravel installation" />
     <MESSAGE value="Auth-1 installed laratrust" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auth-1 installed laratrust" />
+    <MESSAGE value="Db-1 Added models &amp; migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Db-1 Added models &amp; migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="745" y="299" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604075424690">
@@ -271,14 +272,14 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603705611707" />
-    <state x="594" y="271" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1603855046845">
+    <state x="594" y="266" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604081696072">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="594" y="271" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603855046845" />
-    <state x="780" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603848811575">
+    <state x="594" y="266" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604081696072" />
+    <state x="780" y="459" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604081584932">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="780" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603848811575" />
+    <state x="780" y="459" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604081584932" />
     <state x="768" y="454" width="452" height="212" key="git4idea.ui.GitStashDialog" timestamp="1603468165493">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

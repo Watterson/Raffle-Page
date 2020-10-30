@@ -14,4 +14,14 @@ class Payment extends Model
         'total',
         '_fk_refund',
     ];
+
+    public function entry()
+    {
+        return $this->hasMany('App\Models\Entry', );
+    }
+
+    public function refund()
+    {
+        return $this->hasOne('App\Models\Refund', '_fk_refund');
+    }
 }

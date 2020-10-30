@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDrawsTable extends Migration
+class CreateRefundsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateDrawsTable extends Migration
      */
     public function up()
     {
-        Schema::create('draws', function (Blueprint $table) {
+        Schema::create('refunds', function (Blueprint $table) {
             $table->id();
-            $table->string('link')->nullable();
-            $table->timestamp('start_time');
-            $table->bigInteger('total_viewers')->nullable();
+            $table->string('transaction_code');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateDrawsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('draws');
+        Schema::dropIfExists('refunds');
     }
 }

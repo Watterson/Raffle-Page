@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Prize extends Model
+class Refund extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'title',
-        'description',
+        'transaction_code',
     ];
 
-    public function prize()
+    public function payment()
     {
-        return $this->hasOne('App\Models\Prize');
+        return $this->hasOne('App\Models\Payment');
     }
 }

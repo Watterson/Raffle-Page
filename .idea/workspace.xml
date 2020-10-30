@@ -7,21 +7,29 @@
   <component name="ChangeListManager">
     <list default="true" id="49200e9e-b29d-4c57-a35c-b2ea850e4098" name="Default Changelist" comment="Fresh Laravel installation">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/laratrust.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_025239_laratrust_setup_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/LaratrustSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Competition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Draw.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Entry.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Prize.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Winner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162524_create_competitions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162605_create_prizes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162638_create_winners_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162708_create_questions_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162740_create_answers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162802_create_payments_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_170547_create_entries_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +200,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603466815463</updated>
       <workItem from="1603466816718" duration="4808000" />
-      <workItem from="1603846660917" duration="3153000" />
+      <workItem from="1603846660917" duration="16598000" />
     </task>
     <task id="LOCAL-00001" summary="Fresh Laravel installation">
       <created>1603470733660</created>
@@ -201,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603470733660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Auth-1 installed laratrust">
+      <created>1603855044995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603855044995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,9 +243,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fresh Laravel installation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fresh Laravel installation" />
+    <MESSAGE value="Auth-1 installed laratrust" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth-1 installed laratrust" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="745" y="299" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604075424690">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="745" y="299" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604075424690" />
     <state x="731" y="468" width="525" height="183" key="ComposerInitDialogKey" timestamp="1603467055166">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -251,10 +271,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603705611707" />
-    <state x="594" y="276" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1603470740403">
+    <state x="594" y="271" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1603855046845">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="594" y="276" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603470740403" />
+    <state x="594" y="271" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1603855046845" />
     <state x="780" y="464" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603848811575">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

@@ -24,6 +24,7 @@ class CreateCompetitionsTable extends Migration
             $table->bigInteger('_fk_question');
             $table->bigInteger('_fk_prize');
             $table->bigInteger('_fk_winner');
+            $table->bigInteger('_fk_charity')->nullable();
             $table->timestamps();
         });
     }

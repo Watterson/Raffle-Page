@@ -18,6 +18,7 @@ class AddTableRelationships extends Migration
             $table->foreign('_fk_winner')->references('id')->on('winners');
             $table->foreign('_fk_draw')->references('id')->on('draws');
             $table->foreign('_fk_question')->references('id')->on('questions');
+            $table->foreign('_fk_charity')->references('id')->on('charities');
         });
 
         Schema::table('answers', function (Blueprint $table) {
@@ -36,6 +37,14 @@ class AddTableRelationships extends Migration
 
         Schema::table('winners', function (Blueprint $table) {
             $table->foreign('_fk_entry')->references('id')->on('entries');
+        });
+
+        Schema::table('user_interfaces', function (Blueprint $table) {
+            $table->foreign('_fk_component')->references('id')->on('user_interface_components');
+        });
+
+        Schema::table('user_interface_components', function (Blueprint $table) {
+            $table->foreign('_fk_page')->references('id')->on('user_interface_pages');
         });
     }
 

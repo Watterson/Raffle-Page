@@ -7,20 +7,19 @@
   <component name="ChangeListManager">
     <list default="true" id="49200e9e-b29d-4c57-a35c-b2ea850e4098" name="Default Changelist" comment="Fresh Laravel installation">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Refund.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_184216_create_refunds_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_184729_add_table_relationships.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Charity.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserInterfaceComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/UserInterfacePage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_163959_create_user_interfaces_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_164026_create_user_interface_components_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_164940_create_user_interface_pages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_05_170524_create_charities_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Answer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Competition.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Competition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Draw.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Draw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Entry.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Entry.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Payment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Prize.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Prize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Winner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Winner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162546_create_draws_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_162524_create_competitions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_162524_create_competitions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_184729_add_table_relationships.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_184729_add_table_relationships.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -178,6 +177,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -193,7 +197,9 @@
       <option name="presentableId" value="Default" />
       <updated>1603466815463</updated>
       <workItem from="1603466816718" duration="4808000" />
-      <workItem from="1603846660917" duration="19614000" />
+      <workItem from="1603846660917" duration="20000000" />
+      <workItem from="1604309106918" duration="1215000" />
+      <workItem from="1604593912031" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary="Fresh Laravel installation">
       <created>1603470733660</created>
@@ -216,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604081693638</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Db- Added table relationships">
+      <created>1604084859416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604084859416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,17 +258,22 @@
     <MESSAGE value="Fresh Laravel installation" />
     <MESSAGE value="Auth-1 installed laratrust" />
     <MESSAGE value="Db-1 Added models &amp; migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Db-1 Added models &amp; migrations" />
+    <MESSAGE value="Db- Added table relationships" />
+    <option name="LAST_COMMIT_MESSAGE" value="Db- Added table relationships" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="745" y="299" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604075424690">
+    <state x="745" y="294" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604594471552">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="745" y="299" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604075424690" />
+    <state x="745" y="294" width="494" height="480" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1604594471552" />
     <state x="731" y="468" width="525" height="183" key="ComposerInitDialogKey" timestamp="1603467055166">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="731" y="468" width="525" height="183" key="ComposerInitDialogKey/72.27.1848.1053@72.27.1848.1053" timestamp="1603467055166" />
+    <state x="782" y="302" width="424" height="496" key="FileChooserDialogImpl" timestamp="1604594012130">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="782" y="302" width="424" height="496" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1604594012130" />
     <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1603705611707">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -272,10 +290,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1603705611707" />
-    <state x="594" y="266" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604081696072">
+    <state x="594" y="261" width="800" height="568" key="Vcs.Push.Dialog.v2" timestamp="1604084861660">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="594" y="266" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604081696072" />
+    <state x="594" y="261" width="800" height="568" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1604084861660" />
     <state x="780" y="459" width="432" height="182" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604081584932">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

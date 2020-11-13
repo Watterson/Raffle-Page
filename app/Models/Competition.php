@@ -20,6 +20,7 @@ class Competition extends Model
         '_fk_prize',
         '_fk_winner',
         '_fk_draw',
+        '_fk_charity',
     ];
 
     protected $casts = [
@@ -45,5 +46,10 @@ class Competition extends Model
     public function draw()
     {
         return $this->hasOne('App\Models\Draw', '_fk_draw');
+    }
+
+    public function charity()
+    {
+        return $this->hasOne('App\Models\Charity', '_fk_charity');
     }
 }

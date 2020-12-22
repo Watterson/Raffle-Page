@@ -34,6 +34,8 @@ class CreateCharitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('charities');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('charities');
+      Schema::enableForeignKeyConstraints();
     }
 }

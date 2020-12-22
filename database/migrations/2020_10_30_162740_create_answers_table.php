@@ -15,7 +15,7 @@ class CreateAnswersTable extends Migration
     {
         Schema::create('answers', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('_fk_question');
+            $table->bigInteger('_fk_question')->unsigned()->index();
             $table->string('title');
             $table->boolean('correct');
             $table->timestamps();
@@ -29,6 +29,8 @@ class CreateAnswersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('answers');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('answers');
+      Schema::enableForeignKeyConstraints();
     }
 }

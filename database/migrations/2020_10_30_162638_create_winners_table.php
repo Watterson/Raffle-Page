@@ -15,8 +15,7 @@ class CreateWinnersTable extends Migration
     {
         Schema::create('winners', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('_fk_user');
-            $table->bigInteger('_fk_competition');
+            $table->bigInteger('_fk_entry')->unsigned()->index();
             $table->boolean('redeemed');
             $table->timestamps();
         });
@@ -29,6 +28,8 @@ class CreateWinnersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('winners');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('winners');
+      Schema::enableForeignKeyConstraints();
     }
 }

@@ -17,7 +17,7 @@ class CreatePaymentsTable extends Migration
             $table->id();
             $table->string('transaction_code');
             $table->float('total');
-            $table->bigInteger('_fk_refund');
+            $table->bigInteger('_fk_refund')->unsigned()->index();
             $table->timestamps();
         });
     }
@@ -29,6 +29,8 @@ class CreatePaymentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payments');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('payments');
+      Schema::enableForeignKeyConstraints();
     }
 }

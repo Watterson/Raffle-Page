@@ -15,7 +15,7 @@ class CreateUserInterfacesTable extends Migration
     {
         Schema::create('user_interfaces', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('_fk_user');
+            $table->bigInteger('_fk_component')->unsigned()->index();
             $table->string('contents');
             $table->timestamps();
         });
@@ -28,6 +28,8 @@ class CreateUserInterfacesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_interfaces');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('user_interfaces');
+      Schema::enableForeignKeyConstraints();
     }
 }

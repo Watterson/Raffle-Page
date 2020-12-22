@@ -28,6 +28,8 @@ class CreatePrizesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prizes');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('prizes');
+      Schema::enableForeignKeyConstraints();
     }
 }

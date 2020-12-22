@@ -21,10 +21,11 @@ class CreateCompetitionsTable extends Migration
             $table->timestamp('end_date');
             $table->integer('ticket_total');
             $table->float('ticket_price');
-            $table->bigInteger('_fk_question');
-            $table->bigInteger('_fk_prize');
-            $table->bigInteger('_fk_winner');
-            $table->bigInteger('_fk_charity')->nullable();
+            $table->bigInteger('_fk_question')->unsigned()->index();
+            $table->bigInteger('_fk_prize')->unsigned()->index();
+            $table->bigInteger('_fk_draw')->unsigned()->index();
+            $table->bigInteger('_fk_winner')->unsigned()->index();
+            $table->bigInteger('_fk_charity')->unsigned()->index();
             $table->timestamps();
         });
     }
@@ -36,6 +37,8 @@ class CreateCompetitionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('competitions');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('competitions');
+      Schema::enableForeignKeyConstraints();
     }
 }

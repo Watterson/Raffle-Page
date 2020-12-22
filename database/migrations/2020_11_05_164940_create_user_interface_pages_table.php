@@ -28,6 +28,8 @@ class CreateUserInterfacePagesTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('user_interface_pages');
+        Schema::enableForeignKeyConstraints();
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddTableRelationships extends Migration
+class CreateTableRelationships extends Migration
 {
     /**
      * Run the migrations.
@@ -55,6 +55,38 @@ class AddTableRelationships extends Migration
      */
     public function down()
     {
-        //
+      // Schema::table('competitions', function (Blueprint $table) {
+      //     $table->dropForeign('competitions__fk_prize_foreign');
+      //     $table->dropForeign('competitions__fk_winner_foreign');
+      //     $table->dropForeign('competitions__fk_draw_foreign');
+      //     $table->dropForeign('competitions__fk_question_foreign');
+      //     $table->dropForeign('competitions__fk_charity_foreign');
+      // });
+      //
+      // Schema::table('answers', function (Blueprint $table) {
+      //   $table->dropForeign('answers__fk_question_foreign');
+      // });
+      //
+      // Schema::table('entries', function (Blueprint $table) {
+      //     $table->dropForeign('entries__fk_user_foreign');
+      //     $table->dropForeign('entries__fk_competition_foreign');
+      //     $table->dropForeign('entries__fk_payment_foreign');
+      // });
+      //
+      // Schema::table('payments', function (Blueprint $table) {
+      //   $table->dropForeign('payments__fk_refund_foreign');
+      // });
+      //
+      // Schema::table('winners', function (Blueprint $table) {
+      //   $table->dropForeign('winners__fk_entry_foreign');
+      // });
+      //
+      // Schema::table('user_interfaces', function (Blueprint $table) {
+      //   $table->dropForeign('user_interfaces__fk_component_foreign');
+      // });
+      //
+      // Schema::table('user_interface_components', function (Blueprint $table) {
+      //   $table->dropForeign('user_interface_components__fk_page_foreign');
+      // });
     }
 }

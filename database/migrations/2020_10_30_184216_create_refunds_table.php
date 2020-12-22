@@ -27,6 +27,8 @@ class CreateRefundsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('refunds');
+        Schema::enableForeignKeyConstraints();
     }
 }

@@ -29,6 +29,8 @@ class CreateDrawsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('draws');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('draws');
+      Schema::enableForeignKeyConstraints();
     }
 }

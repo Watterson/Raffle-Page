@@ -15,8 +15,9 @@ class CreateEntriesTable extends Migration
     {
         Schema::create('entries', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('_fk_user');
-            $table->bigInteger('_fk_competition');
+            $table->bigInteger('_fk_user')->unsigned()->index();
+            $table->bigInteger('_fk_competition')->unsigned()->index();
+            $table->bigInteger('_fk_payment')->unsigned()->index();
             $table->timestamps();
         });
     }
@@ -28,6 +29,8 @@ class CreateEntriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('entries');
+      Schema::disableForeignKeyConstraints();
+      Schema::dropIfExists('entries');
+      Schema::enableForeignKeyConstraints();
     }
 }

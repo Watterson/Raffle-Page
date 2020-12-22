@@ -15,7 +15,7 @@ class CreateUserInterfaceComponentsTable extends Migration
     {
         Schema::create('user_interface_components', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('_fk_page');
+            $table->bigInteger('_fk_page')->unsigned()->index();
             $table->string('name');
             $table->string('description');
             $table->timestamps();
@@ -29,6 +29,8 @@ class CreateUserInterfaceComponentsTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('user_interface_components');
+        Schema::enableForeignKeyConstraints();    
     }
 }
